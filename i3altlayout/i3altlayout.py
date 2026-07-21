@@ -10,8 +10,12 @@ i3wm efficient screen real estate
 import sys
 import os
 import logging
-import i3ipc  # pylint: disable=E0401
-from docopt import docopt  # pylint: disable=E0401
+
+try:
+    import i3ipc  # pylint: disable=E0401
+    from docopt import docopt  # pylint: disable=E0401
+except ImportError:
+    pass
 
 NAME = "i3altlayout"
 VERSION = "1.1.4"
