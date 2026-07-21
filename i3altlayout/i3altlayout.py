@@ -18,7 +18,7 @@ except ImportError:
     pass
 
 NAME = "i3altlayout"
-VERSION = "1.1.4"
+VERSION = "1.1.5"
 logger = logging.getLogger(__name__)
 USAGE = f"""
 {NAME}
